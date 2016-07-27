@@ -1,0 +1,28 @@
+
+// STM32F469 disco
+// PD4 LED orange
+static int pin = 78;
+static void error(const int id)
+{
+    pinMode(pin, OUTPUT);
+
+    while (1) {
+        int cnt = id;
+        while (cnt--) {
+            digitalWrite(pin, HIGH);
+            delay(200);
+            digitalWrite(pin, LOW);
+            delay(200);
+        }
+        digitalWrite(pin, HIGH);
+        delay(500);
+    }
+}
+
+static void noerr()
+{
+    pinMode(pin, OUTPUT);
+    digitalWrite(pin, LOW);
+}
+
+
