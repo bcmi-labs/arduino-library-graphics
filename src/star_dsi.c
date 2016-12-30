@@ -4,6 +4,16 @@
 // TODO
 //#define ENABLE_IRQ
 
+
+// alfran: DMA2D_Color_Mode DMA2D Color Mode
+
+#define DMA2D_ARGB8888                       ((uint32_t)0x00000000)             /*!< ARGB8888 DMA2D color mode */
+#define DMA2D_RGB888                         ((uint32_t)0x00000001)             /*!< RGB888 DMA2D color mode   */
+#define DMA2D_RGB565                         ((uint32_t)0x00000002)             /*!< RGB565 DMA2D color mode   */
+#define DMA2D_ARGB1555                       ((uint32_t)0x00000003)             /*!< ARGB1555 DMA2D color mode */
+#define DMA2D_ARGB4444                       ((uint32_t)0x00000004)             /*!< ARGB4444 DMA2D color mode */
+
+
 #define BG_LAYER_ADDR                   ((uint32_t)0xC0000000)
 //#define NUM_LAYERS                      ((uint32_t)2)
 #define BG_LAYER_IDX                    ((uint32_t)0)
